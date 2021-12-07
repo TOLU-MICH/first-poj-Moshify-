@@ -6,7 +6,9 @@
   --color-body: #918ca4;
 }
 
-*,*::after, *::before{
+*,
+*::after,
+*::before {
   box-sizing: border-box;
 }
 /* TYPOGRAPHY */
@@ -161,40 +163,57 @@ a {
   background: var(--color-primary);
   color: #fff;
 }
-.btn--primary:hover{
+.btn--primary:hover {
   background: #3a8ffd;
 }
-.btn--secodary{
+.btn--secodary {
   background: var(--color-secondary);
   color: #fff;
 }
-.btn--secodary:hover{
+.btn--secodary:hover {
   background: #00c8eb;
 }
-.btn--accent{
+.btn--accent {
   background: var(--color-accent);
   color: #fff;
 }
-.btn--accent:hover{
+.btn--accent:hover {
   background: #ec3000;
 }
-.btn--block{
+.btn--block {
   width: 100%;
   display: inline-block;
 }
 
-@media screen and (min-width:1080px){
-  .btn{
+@media screen and (min-width: 1080px) {
+  .btn {
     font-size: 1.5rem;
   }
 }
-.btn--outline{
+.btn--outline {
   background: #fff;
   color: var(--color-headings);
   border: 2px solid var(--color-headings);
 }
 
-.btn:hover{
+.btn:hover {
   background: var(--color-headings);
   color: #fff;
+}
+/* inputs */
+.input {
+  border-radius: 30px;
+  border: 1px solid #ccc;
+  color: var(--color-headings);
+  font-size: 2rem;
+  outline: 0;
+  padding: 1.5rem 3.5rem;
+}
+::placeholder{
+  color: #cdcbd7;
+}
+@media screen and (min-width){
+  .input{
+    font-size: 1.5rem;
+  }
 }
